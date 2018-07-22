@@ -3,58 +3,59 @@
 @section('content')
 
 <!-- Services Section -->
+<?php //print_r($page['experience']);?>
 <div class="container-fluid p-0">
-<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">AIDILROZI
-            <span class="text-primary">SANI</span>
-          </h1>
-          <div class="subheading mb-5">A-5-8 JALAN BP 1/2 · BANDAR BUKIT PUCHONG, PUCHONG 47100 · (+6) 019 - 3039084 ·
-            <a href="mailto:name@email.com">mohd.aidilrozi@gmail.com</a>
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+          <div class="my-auto">
+            <h1 class="mb-0">  <?php echo $page['firstname'];?>
+              <span class="text-primary"><?php echo $page['lastname'];?></span>
+            </h1>
+            <div class="subheading mb-5"><?php echo $page['address'];?>  <span><?php echo $page['mobileno'];?></span>
+              <a href="mailto:name@email.com"><?php echo $page['email'];?></a>
+            </div>
+            <p class="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+            <ul class="list-inline list-social-icons mb-0">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
           </div>
-          <p class="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
 
- 
+          <?php echo $page['experience'];?>
 
           <!-- <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -67,7 +68,7 @@
             </div>
           </div> -->
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <!-- <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Junior Application Developer</h3>
               <div class="subheading mb-3">Tri-e Marketing Sdn Bhd</div>
@@ -87,7 +88,7 @@
             <div class="resume-date text-md-right">
               <span class="text-primary">June 2017 - August 2017</span>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -97,7 +98,7 @@
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <!-- <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Segi University partner with University of Greenwich</h3>
               <div class="subheading mb-3">Bachelor of Computing</div>
@@ -110,15 +111,15 @@
           </div>
 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0"></h3>
-              <div class="subheading mb-3">Higher National Diploma in Computing</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.49</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2014 - 2017</span>
-            </div>
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0"></h3>
+                <div class="subheading mb-3">Higher National Diploma in Computing</div>
+                <div>Computer Science - Web Development Track</div>
+                <p>GPA: 3.49</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">2014 - 2017</span>
+              </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row">
@@ -130,8 +131,8 @@
             <div class="resume-date text-md-right">
               <span class="text-primary">2009 - 2013</span>
             </div>
-          </div>
-
+          </div> -->
+          <?php echo $page['education'];?>
         </div>
       </section>
 
@@ -197,8 +198,10 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. </p>
+          <!-- <p>Apart from being a web developer, I enjoy most of my time being outdoors. </p>
           <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+           -->
+           <?php echo $page['interest'];?>
         </div>
       </section>
 

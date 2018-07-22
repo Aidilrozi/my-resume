@@ -71,18 +71,24 @@ trait PageTemplates
     private function resume()
     {
         $this->crud->addField([
-            'name' => 'fullname',
-            'label' => trans('Full Name'),
-            'type' => 'text',
-            'placeholder' => trans('Full Name'),
+            'name' => 'firstname',
+            'label' => trans('firstname'),
+            'fake' => true,
+            'store_in' => 'extras',
+        ]);
+
+        $this->crud->addField([
+            'name' => 'lastname',
+            'label' => trans('lastname'),
+            'fake' => true,
             'store_in' => 'extras',
         ]);
 
         $this->crud->addField([
             'name' => 'content',
-            'label' => trans('Make A Pitch About Yourself'),
-            'type' => 'textarea',
-            'placeholder' => trans('Pitch'),
+            'label' => trans('page content'),
+            'type' => 'wysiwyg',
+            'placeholder' => trans('content'),
         ]);
 
         $this->crud->addField([
@@ -90,6 +96,24 @@ trait PageTemplates
             'label' => trans('Address'),
             'type' => 'text',
             'placeholder' => trans('Address'),
+            'fake' => true,
+            'store_in' => 'extras',
+        ]);
+        $this->crud->addField([
+            'name' => 'mobileno',
+            'label' => trans('mobile'),
+            'type' => 'text',
+            'placeholder' => trans('mobile'),
+            'fake' => true,
+            'store_in' => 'extras',
+        ]);
+
+        $this->crud->addField([
+            'name' => 'email',
+            'label' => trans('email'),
+            'type' => 'text',
+            'placeholder' => trans('email'),
+            'fake' => true,
             'store_in' => 'extras',
         ]);
 
@@ -98,6 +122,7 @@ trait PageTemplates
             'label' => trans('Experience'),
             'type' => 'wysiwyg',
             'placeholder' => trans('Experience'),
+            'fake' => true,
             'store_in' => 'extras',
         ]);
 
@@ -106,6 +131,16 @@ trait PageTemplates
             'label' => trans('Education'),
             'type' => 'wysiwyg',
             'placeholder' => trans('Education'),
+            'fake' => true,
+            'store_in' => 'extras',
+        ]);
+
+        $this->crud->addField([
+            'name' => 'interest',
+            'label' => trans('interest'),
+            'type' => 'textarea',
+            'placeholder' => trans('interest'),
+            'fake' => true,
             'store_in' => 'extras',
         ]);
 
