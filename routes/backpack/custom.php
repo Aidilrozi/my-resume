@@ -12,7 +12,5 @@ Route::group([
     'namespace'  => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
 }); // this should be the absolute last line of this file
-    CRUD::resource('tag', 'TagCrudController');
-    /** CATCH-ALL ROUTE for Backpack/PageManager - needs to be at the end of your routes.php file  **/
-Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])
-->where(['page' => '^((?!admin).)*$', 'subs' => '.*']);
+
+
